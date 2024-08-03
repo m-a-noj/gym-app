@@ -3,24 +3,31 @@ import { Stack,Typography } from '@mui/material';
 import icon from '../assets/gym.png';
 
 
-const BodyParts = ({item,setBodypart,BodyPart}) => {
+
+const BodyParts = ({item,setBodyPart,bodyPart}) => {
   return (
-    <Stack type="button"
+    <Stack
+   
+     type="button"
     alignItems={'center'}
     justifyContent={'center'}
     className='bodyPart-card'
     sx={{
-        borderTop: BodyPart === item ? '4px solid #ff2625':'',
+        borderTop:bodyPart === item ? '4px solid #ff2625':'',
         backgroundColor:'#fff',
         height:'270px',
         width:'270px',
         cursor:'pointer',
-        gap:'47px'
+        gap:'47px',
+       
+    }}
+    onClick={()=>{setBodyPart(item)
+      window.scrollTo({top:1800,left:100,behavior:'smooth'})
     }}
     >
         <img src={icon} alt='dumbell' style={{width:'40px',height:'40px'}}/>
         <Typography>
-            {item}
+            {item.toUpperCase()}
         </Typography>
     </Stack>
   )

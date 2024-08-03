@@ -4,7 +4,7 @@ import { fetchData,exerciseOptions } from '../utils/fetchData';
 import ScrollBar from './ScrollBar';
 
 
-const SearchExercise = ({setExercise,bodyPart,setBodypart}) => {
+const SearchExercise = ({setExercise,bodyPart,setBodyPart}) => {
   const [search,setSearch] = useState("");
  
   const[bodyParts,setBodyparts]=useState([])
@@ -59,7 +59,7 @@ fetchExercisesData();},[])
       <Box sx={{
         position:'relative',width:'100%',p:'20px'
       }}>
-        <ScrollBar data={bodyParts} bodyPart={bodyPart} setBodypart={setBodypart}/>
+        <ScrollBar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart}/>
         
       </Box>
     </Stack>

@@ -1,7 +1,7 @@
 export const exerciseOptions = {
     method: 'GET',
     headers: {
-      'x-rapidapi-key': "9669407f44msh1a5f6a2c701c62ap12fa6cjsn1ab2a675cb12",             
+      'x-rapidapi-key': '9669407f44msh1a5f6a2c701c62ap12fa6cjsn1ab2a675cb12',
       'x-rapidapi-host': 'exercisedb.p.rapidapi.com'
     }
   };

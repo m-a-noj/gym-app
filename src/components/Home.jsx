@@ -5,13 +5,13 @@ import SearchExercise from './SearchExercise';
 import Exercise from './Exercise';
 
 function Home() {
-  const [exercises,setExercise]=useState([]);
-  const [bodyPart,setBodyPart]=useState([])
+  const [exercise,setExercise]=useState([]);
+  const [bodyPart,setBodyPart]=useState('all')
   return (
     <Box>
      <HeroBanner/>
-     <SearchExercise bodyPart={bodyPart} setExercise={setExercise} setBodypart={setBodyPart}/>
-     <Exercise bodyPart={bodyPart} setExercise={setExercise} setBodypart={setBodyPart}/>
+     <SearchExercise bodyPart={bodyPart} setExercise={setExercise} setBodyPart={setBodyPart}/>
+     <Exercise bodyPart={bodyPart} exercise={exercise} setExercise={setExercise}/>
     </Box>
   )
 }
